@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Button
+import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -31,7 +32,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-           myApp()
+           MyApp()
         }
     }
 }
@@ -40,7 +41,7 @@ data class Message(val author: String, val message: String)
 
 
 @Composable
-fun myApp(){
+fun MyApp(){
 
     var shouldShowOnboarding by remember { mutableStateOf(true) }
 
@@ -52,17 +53,12 @@ fun myApp(){
 }
 
 @Composable
-fun Greeting(names: List<String> = List(1000){"$it"}){
-    Surface( modifier = Modifier.padding(vertical = 4.dp)){
-        Column {
-            /* for (name in names) {
-                 Message(name)
-             }*/
-            LazyColumn{
-                items(names){ name ->
-                    Message(name)
-                }
-            }
+fun Greeting(    modifier: Modifier = Modifier,
+                 names: List<String> = List(1000) { "$it" }
+) {
+    LazyColumn(modifier = modifier.padding(vertical = 4.dp)) {
+        items(items = names) { name ->
+             Message(name = name)
         }
     }
 }
@@ -81,7 +77,7 @@ fun Message(name: String) {
             ) {
                 Text(text = "Hello")
                 Text(text = name)}
-            OutlinedButton(onClick = {
+            ElevatedButton(onClick = {
                 extended = !extended
             }) {
                 Text(if (extended) "Show Less" else "Show More")
@@ -100,7 +96,7 @@ fun OnboardingScreen(onContinueClicked: ()-> Unit) {
         Text("Welcome to the Basics Codelab!")
         Button(
             modifier = Modifier.padding(vertical = 24.dp),
-            onClick = onContinueClicked
+            onClick = { onContinueClicked }
         ) {
             Text("Continue")
         }
