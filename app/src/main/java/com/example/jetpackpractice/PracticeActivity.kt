@@ -26,6 +26,8 @@ class PracticeActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
 
+
+
             val color = remember{
                 mutableStateOf(Color.Yellow)
             }
