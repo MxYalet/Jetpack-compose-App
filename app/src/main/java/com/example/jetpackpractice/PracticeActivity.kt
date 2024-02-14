@@ -31,7 +31,7 @@ class PracticeActivity : ComponentActivity() {
             val color = remember{
                 mutableStateOf(Color.Yellow)
             }
-//
+
             Column (Modifier.fillMaxSize()){
                 colorBox(Modifier.fillMaxSize().weight(1f)){
                     color.value = it
