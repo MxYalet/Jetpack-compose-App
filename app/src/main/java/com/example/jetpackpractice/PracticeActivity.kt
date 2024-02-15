@@ -25,9 +25,7 @@ class PracticeActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-
-
-
+            //MAIN
             val color = remember{
                 mutableStateOf(Color.Yellow)
             }
