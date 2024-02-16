@@ -37,7 +37,6 @@ class PracticeActivity : ComponentActivity() {
                     .weight(1f)
                     .background(color.value))
             }
-
         }
     }
 }
