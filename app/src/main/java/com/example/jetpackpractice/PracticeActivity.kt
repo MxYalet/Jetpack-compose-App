@@ -25,7 +25,6 @@ class PracticeActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            //MAIN
             val color = remember{
                 mutableStateOf(Color.Yellow)
             }
@@ -34,8 +33,6 @@ class PracticeActivity : ComponentActivity() {
                 colorBox(Modifier.fillMaxSize().weight(1f)){
                     color.value = it
                 }
-
-
                 Box(modifier = Modifier.fillMaxSize()
                     .weight(1f)
                     .background(color.value))
