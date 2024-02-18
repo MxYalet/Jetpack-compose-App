@@ -48,14 +48,14 @@ fun colorBox(modifier: Modifier = Modifier,
     Box(modifier = modifier
         .background(Color.Blue)
         .clickable {
-         /*   updateColor(
+            updateColor(
                 Color(
                     Random.nextFloat(),
                     Random.nextFloat(),
                     Random.nextFloat(),
                     1f
                 )
-            )*/
+            )
         }
     )
 }
