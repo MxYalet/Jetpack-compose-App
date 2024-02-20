@@ -45,9 +45,6 @@ class PracticeActivity : ComponentActivity() {
 fun colorBox(modifier: Modifier = Modifier,
              updateColor: (Color) -> Unit){
 
-  /*
-
-
 
     Box(modifier = modifier
         .background(Color.Blue)
@@ -61,7 +58,7 @@ fun colorBox(modifier: Modifier = Modifier,
                 )
             )
         }
-    )*/
+    )
 }
 
 @Composable
