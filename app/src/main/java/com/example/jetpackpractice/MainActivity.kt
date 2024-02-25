@@ -102,15 +102,3 @@ fun OnboardingScreen(onContinueClicked: ()-> Unit) {
         }
     }
 }
-
-@Preview(showBackground = true, widthDp = 320, heightDp = 320)
-@Composable
-fun OnboardingPreview() {
-        OnboardingScreen(onContinueClicked = {})
-}
-
-@Preview(showBackground = true, widthDp = 320)
-@Composable
-fun MessagePreview(){
-    Greeting()
-}
