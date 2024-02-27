@@ -13,21 +13,6 @@
         android:theme="@style/Theme.JetpackPractice"
         tools:targetApi="31">
         <activity
-            android:name=".`Text fieldActivity`"
-            android:exported="false"
-            android:label="@string/title_activity_textfield"
-            android:theme="@style/Theme.JetpackPractice" />
-        <activity
-            android:name=".PracticeActivity"
-            android:exported="true"
-            android:label="@string/title_activity_practice"
-            android:theme="@style/Theme.JetpackPractice" />
-        <activity
-            android:name=".ui.theme.PracticeActivity"
-            android:exported="false"
-            android:label="@string/title_activity_practice"
-            android:theme="@style/Theme.JetpackPractice" />
-        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
