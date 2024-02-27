@@ -13,6 +13,11 @@
         android:theme="@style/Theme.JetpackPractice"
         tools:targetApi="31">
         <activity
+            android:name=".BoxSizeAnimationActivity"
+            android:exported="true"
+            android:label="@string/title_activity_box_size_animation"
+            android:theme="@style/Theme.JetpackPractice" />
+        <activity
             android:name=".MainActivity2"
             android:exported="true"
             android:label="@string/title_activity_main2"
