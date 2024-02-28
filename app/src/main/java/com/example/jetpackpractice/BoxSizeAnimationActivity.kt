@@ -56,17 +56,8 @@ class BoxSizeAnimationActivity : ComponentActivity() {
                     repeatMode = RepeatMode.Reverse
                 ), label = ""
             )
-            Box(
-                modifier = Modifier
-                    .size(size)
-                    .background(color),
-                contentAlignment = Alignment.Center
-            ) {
-                Button(onClick = { sizeState += 50.dp}) {
-                    Text(text = "Increase Size")
-                }
+
             }
         }
     }
-}
 
