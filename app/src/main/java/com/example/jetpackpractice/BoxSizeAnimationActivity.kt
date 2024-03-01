@@ -43,7 +43,9 @@ class BoxSizeAnimationActivity : ComponentActivity() {
                     delayMillis = 300,
                     easing = LinearOutSlowInEasing
                 ),
-             //can also use spring instead of tween and keyframs also
+             //can also use spring instead of tween and keyframs
+
+
                 label = ""
             )
 
