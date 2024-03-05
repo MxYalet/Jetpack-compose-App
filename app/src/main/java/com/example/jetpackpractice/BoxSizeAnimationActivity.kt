@@ -67,6 +67,8 @@ class BoxSizeAnimationActivity : ComponentActivity() {
                 Button(onClick = { sizeState += 50.dp}) {
                     Text(text = "Increase Size")
                 }
+
+
             }
         }
     }
